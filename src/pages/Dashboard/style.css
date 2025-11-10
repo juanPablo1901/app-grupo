@@ -34,7 +34,7 @@ Colores:
 
 }
 
-.Gestion{
+.Dashboard-Contenedor{
   position: relative;
   top: 60px;
   left: 5%;
@@ -49,33 +49,33 @@ Colores:
 
 /*Usuarios*/
 
-.Usuario-sup{
+.Dashboard-sup{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding: 0 0 40px;
   margin-top: -27px;
   border-bottom: 1px solid #27F5F1;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   margin-bottom: 10px;
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.Usuario{
+.Dashboard-titulo{
   display: flex;
   flex-direction: column;
 
 }
 
-.Usuario-sup h1{
+.Dashboard-sup h1{
   margin: 0;
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-.Usuario-sup .sup{
+.Dashboard-sup .sup{
   position: absolute;
   top: 35px;
   left: 0;
@@ -84,118 +84,39 @@ Colores:
   margin-top: -10px;
 }
 
-/*Boton superior Derecha*/
-.Boton-Nuevo{
-  display: flex;
-  align-items: center;
-}
-
-
-.Boton-Nuevo button{ 
-  background-color: #27F5F1;
-  color: #eeeeee;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 18px;
-  font-size: 15px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.Boton-Nuevo button:hover{
-  background-color: #2776F5;
-  transform: scale(1.05);
-}
-
-/*Gestion de usuarios*/
-
-.Gestion-Usuario{
+/*Dashboard informacion*/
+.Dashboard-sub{
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: flex-start;
 }
 
-.Gestion-Usuario h1{
+.Dashboard-sub h1{
   margin: 0;
   color: #2776F5;
   font-size: 1.5rem;
 }
 
-.Gestion-Usuario .sub{
+.Dashboard-sub .sub{
   font-size: 10px;
   color: #8d8686;
   margin-top: -10px;
 }
 
-
-/*Boton nuevos usuarios*/
-.Boton-Usuario button{
-  background-color: #2776F5;
-  color: #eeeeee;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 18px;
-  font-size: 15px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: 8px;
-  width: 100vh;
-
-}
-
-/*
-  background-color: #27F5F1;
-  color: #eeeeee;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 18px;
-  font-size: 15px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-*/
-
-.Boton-Usuario button:hover{
-  transform: scale(1.05);
-}
-
-/*Barra de busqueda*/
-
-.busqueda{
-  width: 100%;
-}
-
-.busqueda input{
-  width: 100%;
-  padding: 10px 15px;
-  background-color: #181e2c;
-  border: 1px solid #2776F5;
-  border-radius: 10px;
-  font-size: 15px;
-  outline: none;
-  transition: border-color 0.3s ease;
-}
-
-.busqueda input:focus{
-  border-color: #2776F5;
-}
-
-
 /*Tarjetas usuarios*/
-
 .Cartas-U{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
-  background-color: #181e2c;
-  padding: 15px;
+  gap: 10px;
+  background-color: #0f1e3b;
   border-radius: 10px;
+  border: 1px solid #27F5F1;
+  padding: 15px;
   margin-top: 15px;
   transition: transform 0.2s ease;
-  width: 100vh;
+  width: 100vh; 
 }
 
 .Cartas-U:hover {
@@ -212,7 +133,7 @@ Colores:
   align-items: center;
   font-weight: bold;
   font-size: 15px;
-  color: #96b2e7;
+  color: #eeeeee;
 }
 
 .Datos{
@@ -225,11 +146,195 @@ Colores:
 
 .Datos h3{
   margin: 0;
+  color: #5e6876;
   font-size: 15px;
 }
 
 .Datos p{
   margin: 2px 0 0;
-  color: #96b2e7;
+  color: #5e6876;
   font-size: 10px;
+}
+
+.usuarios-totales{
+  color: #194dae;
+}
+
+.Nuevos-usuarios h3{
+  margin: 2px 0 0;
+  color: #27F5AD;
+  font-size: 10px;
+}
+
+/*Tarjetas Jugadores*/
+.Cartas-J{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  background-color: #0f3236;
+  border-radius: 10px;
+  border: 1px solid #27F5F1;
+  padding: 15px;
+  margin-top: 15px;
+  transition: transform 0.2s ease;
+  width: 100vh; 
+}
+
+.usuarios-totales-j{
+  color: #2bd7a1;
+}
+
+.Avatar-badget{
+  background-color: #2bd7a1;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 15px;
+  color: #0f3236;
+}
+
+/*Tarjeta liga*/
+.Cartas-L{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  background-color: #0f1e3b;
+  border-radius: 10px;
+  border: 1px solid #27F5F1;
+  padding: 15px;
+  margin-top: 15px;
+  transition: transform 0.2s ease;
+  width: 100vh;
+}
+
+.usuarios-totales-l{
+  color: #194dae;
+}
+
+.Liga {
+  background-color: #2776F5;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 15px;
+  color: #eeeeee;
+}
+
+.Cartas-M{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  background-color: #0f3236;
+  border-radius: 10px;
+  border: 1px solid #27F5F1;
+  padding: 15px;
+  margin-top: 15px;
+  transition: transform 0.2s ease;
+  width: 100vh; 
+}
+
+.usuarios-totales-m{
+  color: #2bd7a1;
+}
+
+.Analitica{
+  background-color: #2bd7a1;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 15px;
+  color: #0f3236;
+}
+
+.Cartas-A{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #1d2437;
+  border-radius: 10px;
+  border: 1px solid #27F5F1;
+  padding: 15px;
+  margin-top: 15px;
+  transition: transform 0.2s ease;
+  width: 100vh; 
+}
+
+.Actividad-R{
+  color: #eeeeee;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.usuarios{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+  background-color: #242a3a;
+}
+
+.usuarios:hover{
+  transform: scale(1.05);
+}
+
+.estado{
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+}
+
+.Cartas-Top{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #1d2437;
+  border-radius: 10px;
+  border: 1px solid #27F5F1;
+  padding: 15px;
+  margin-top: 15px;
+  transition: transform 0.2s ease;
+  width: 100vh; 
+}
+
+.Actividad-Mejores-Jugadores{
+  color: #eeeeee;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.usuarios{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+  background-color: #242a3a;
+}
+
+.Cartas-J:hover {
+  transform: scale(1.05);
+}
+.Cartas-L:hover {
+  transform: scale(1.05);
+}
+.Cartas-M:hover {
+  transform: scale(1.05);
 }
