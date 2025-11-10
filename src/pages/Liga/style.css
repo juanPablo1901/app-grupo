@@ -22,7 +22,7 @@ Colores:
   padding: 0;
 }
 
-.Gestion_usuario {
+.Gestion-Ligas {
   position: relative;
   width: 100%;
   padding: 40px 60px;
@@ -46,9 +46,9 @@ Colores:
   gap: 15px;
 }
 
-/*Usuarios*/
+/*Ligas*/
 
-.Usuario-sup{
+.Ligas-sup{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -62,18 +62,18 @@ Colores:
   height: 100%;
 }
 
-.Usuario{
+.Ligas{
   display: flex;
   flex-direction: column;
 }
 
-.Usuario-sup h1{
+.Ligas-sup h1{
   margin: 0;
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-.Usuario-sup .sup{
+.Ligas-sup .sup{
   position: absolute;
   top: 35px;
   left: 0;
@@ -105,28 +105,29 @@ Colores:
   transform: scale(1.05);
 }
 
-/*Gestion de usuarios*/
-.Gestion-Usuario{
+/*Gestion de Ligas*/
+.Gestion-liga{
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: flex-start;
 }
 
-.Gestion-Usuario h1{
+.Gestion-liga h1{
   margin: 0;
   color: #2776F5;
   font-size: 1.5rem;
 }
 
-.Gestion-Usuario .sub{
+.Gestion-liga .sub{
   font-size: 10px;
   color: #8d8686;
   margin-top: -10px;
 }
 
-/*Boton nuevos usuarios*/
-.Boton-Usuario button{
+
+/*Boton ligas*/
+.Boton-Liga button{
   background-color: #2776F5;
   color: #eeeeee;
   border: none;
@@ -140,19 +141,7 @@ Colores:
   width: 100vh;
 }
 
-/*
-  background-color: #27F5F1;
-  color: #eeeeee;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 18px;
-  font-size: 15px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-*/
-
-.Boton-Usuario button:hover{
+.Boton-Liga button:hover{
   transform: scale(1.05);
 }
 
@@ -231,6 +220,24 @@ Colores:
   font-size: 10px;
 }
 
+.equipos{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.equipos-cantidad{
+  border-radius: 10px;
+  border: 2px solid #618fa4;
+  background-color: #294154;
+  color: #618fa4;
+  padding: 10px 18px;
+  font-size: 10px;
+}
+
 .Actividad {
   display: flex;
   flex-direction: row;
@@ -240,13 +247,7 @@ Colores:
   padding: 10px 18px;
 }
 
-.rol .Tiempo-activo{
-  opacity: 0.8;
-  padding: 10px 18px;
-}
-
-
-.rol{
+.torneo{
   border-radius: 10px;
   border: 2px solid #194dae;
   background-color: #1b3457;
@@ -254,22 +255,28 @@ Colores:
   padding: 10px 18px;
 }
 
-.Tiempo-activo{
+.incripcion{
   border-radius: 10px;
-  border: 2px solid #618fa4;
-  background-color: #294154;
-  color: #618fa4;
+  border: 2px solid #194dae;
+  background-color: #1b3457;
+  color: #194dae;
   padding: 10px 18px;
 }
 
+.torneo .incripcion{
+  opacity: 0.8;
+  padding: 10px 18px;
+}
+
+/*Botones de edicion*/
 .Botones-Cartas{
   display: flex;
   flex-direction: row;
   gap: 10px;
   margin-top: 10px;
+  width: 100%;
 }
 
-/*Botones de edicion*/
 .Botones-Cartas button{
   display: flex;
   align-items: center;
@@ -288,12 +295,13 @@ Colores:
   color: #194dae;
   padding: 10px 18px;
   cursor: pointer;
+  width: 100%;
   transition: all 0.3s ease;
 }
 
 .editar:hover{
   background-color: #2776F5;
-  transform: scale(1.05);
+  transform: scale(1.01);
   border: solid 3px #eeeeee;
 }
 
